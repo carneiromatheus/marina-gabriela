@@ -1,5 +1,5 @@
-import handleScroll from './handleScroll.js';
+import handleScroll from "./handleScroll.js";
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   handleScroll();
 });

@@ -94,13 +94,13 @@
   margin-top: 1.6em;
 }
 
-#home  .social-links ul {
+#home .social-links ul {
   display: flex;
   align-items: center;
   gap: 0.8rem;
 }
 
-#home  .social-links li:hover {
+#home .social-links li:hover {
   scale: 1.05;
   transition: scale 300ms;
 }
@@ -128,10 +128,14 @@
   40% {
     opacity: 1;
   }
-  50%, 70%, 90%{
+  50%,
+  70%,
+  90% {
     opacity: 0;
   }
-  60%, 80%, 100% {
+  60%,
+  80%,
+  100% {
     opacity: 1;
   }
 }
@@ -157,7 +161,6 @@
     position: absolute;
     top: 2.4rem;
     right: 1.6rem;
-    
   }
 }
 
@@ -165,11 +168,11 @@
   #home h1 {
     font-size: max(4.8rem);
   }
-  
+
   #home h2 {
     font-size: max(3.2rem);
   }
-  
+
   #home .text {
     padding: 2.4rem;
   }
