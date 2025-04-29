@@ -1,0 +1,14 @@
+.u-max-display {
+  max-width: var(--max-screen-size);
+}
+
+.u-desktop-display {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .u-desktop-display {
+    display: block;
+    font-weight: 400;
+  }
+}

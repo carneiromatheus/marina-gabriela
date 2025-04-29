@@ -1,0 +1,57 @@
+
+button.cv-container {
+  position: fixed;
+  bottom: 1.6rem;
+  left: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  width: fit-content;
+  font-family: "Instrument", serif;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--text-color);
+  background-color: transparent;
+  border: none;
+}
+
+button.cv-container .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5.6rem;
+  height: 5.6rem;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  filter: drop-shadow(0 0 0.75rem var(--shadow-color));
+  cursor: pointer;
+  transition: scale 250ms;
+}
+
+button.cv-container .icon:hover {
+  scale: 1.05;
+}
+
+button.cv-container .icon:active {
+  scale: 1;
+  filter: none;
+}
+
+button.cv-container ion-icon {
+  font-size: 3.6rem;
+}
+
+@media (max-width: 768px) {
+  button.cv-container {
+    opacity: 0;
+    transform: translateY(2rem);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+   .scrolled .cv-container {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

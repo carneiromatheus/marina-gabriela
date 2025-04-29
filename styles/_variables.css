@@ -1,0 +1,11 @@
+:root {
+  /* Colors*/
+  --bg-page-color: #f6f4ee;
+  --primary-color: #cd9f86;
+  --secondary-color: #bf8261;
+  --shadow-color: #a0a0a050;
+  --text-color: #707070;
+  
+  /* Default sizes*/
+  --max-screen-size: 1536px;
+}
