@@ -18,6 +18,9 @@
   font-size: clamp(100%, 1.6rem + 8dvh, 10rem);
   line-height: 1;
   color: var(--secondary-color);
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: slide-in 2.5s ease-out forwards;
 }
 
 #home h2 {
@@ -25,6 +28,9 @@
   font-size: clamp(100%, 1.6rem + 5dvh, 4rem);
   line-height: 1;
   color: var(--primary-color);
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: slide-in 2.5s ease-out forwards;
 }
 
 #home .cover {
