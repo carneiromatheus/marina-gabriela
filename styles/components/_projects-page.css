@@ -1,0 +1,103 @@
+section#projects {
+  max-width: 1536px;
+  min-height: 80dvh;
+  margin: 2.4rem 0;
+}
+
+section#projects h2 {
+  font-family: "Instrument", serif;
+  font-size: clamp(2.8rem, 1rem + 3dvw, 3.2rem);
+  color: var(--secondary-color);
+}
+
+section#projects h3 {
+  margin-top: 1.6rem;
+  font-size: clamp(2rem, 0.8rem + 2dvw, 2.4rem);
+  color: var(--primary-color);
+}
+
+section#projects ul.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.6rem;
+  margin-top: 1.6rem;
+  overflow-x: auto;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+section#projects ul.projects-list::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+section#projects li.project-card {
+  width: 18%;
+  min-width: 24rem;
+  margin-bottom: 2.4rem;
+  border-radius: 1.6rem;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+section#projects li.project-card div.cover {
+  position: relative;
+}
+
+section#projects li.project-card ion-icon {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 2.8rem;
+  color: var(--primary-color);
+}
+
+section#projects li.project-card a {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  width: 100%;
+  padding: 0.8rem;
+}
+
+section#projects li.project-card a img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 0.8rem;
+}
+
+section#projects li.project-card a h4 {
+  padding: 0 0.8rem;
+}
+
+section#projects li.project-card a p {
+  padding: 0 0.8rem 1.6rem;
+}
+
+section#projects li.project-card:hover {
+  scale: 1.02;
+  transition: scale 0.2s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 3px 0px;
+}
+
+section#projects li.project-card a:hover h4 {
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  section#projects ul.projects-list {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 1536px) {
+  section#projects h2,
+  section#projects h3 {
+    margin-left: 2.4rem;
+  }
+
+  section#projects ul.projects-list {
+    padding: 0 2.4rem;
+    gap: 2.4rem;
+  }
+}
